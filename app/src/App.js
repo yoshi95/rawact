@@ -1,9 +1,8 @@
 import React from "react";
+
 import Counter from "./Counter";
 import AdvancedCounter from "./AdvancedCounter";
-import DynamicProps from "./DynamicProps";
-import ToggleSection from "./ToggleSection";
-import Recursive from "./Recursive";
+import BelowTheFold from './BelowTheFold';
 
 export default () => {
 	return (
@@ -24,17 +23,10 @@ export default () => {
 			<p>
 				<AdvancedCounter />
 			</p>
-			<p>
-				<DynamicProps onClick={e => alert(e.target.innerText)}>
-					It works {Math.random() < 0.5 ? "great" : "nice"}!
-				</DynamicProps>
+			<p style={{ display: 'block', height: '1000px', backgroundColor: 'blue' }}>
+				SOME SPACE HERE!!!
 			</p>
-			<p>
-				<ToggleSection />
-			</p>
-			<p>
-				<Recursive />
-			</p>
+			<BelowTheFold />
 		</div>
 	);
 };
